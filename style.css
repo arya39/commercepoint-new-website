@@ -20,7 +20,7 @@ header{
     background: transparent;
 }
 body{
-    background-color: red;
+    background-color: transparent;
 }
 .logo{
     font-weight:700px;
@@ -209,6 +209,7 @@ section{
         height: 100%;
         gap: 1rem;
         grid-template-columns: 1fr;
+        padding: 40px;
     }
     .icons{
         display: none;
@@ -242,12 +243,40 @@ section{
     .nav-list.open{
         right: 0;
     }
+      .hero{
+        padding: 40px;
+    }
 }
 @media(max-width: 680px){
 
     .hero-img img{
         width: 100%;
         height: auto;
+    }
+      .hero{
+        padding: 40px;
+    }
+
+}
+
+@media(max-width: 420px){
+
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+     .hero-text h1{
+        font-size: 45px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+    .hero{
+        padding: 40px;
+    }
+    .ctta{
+        margin: 30px;
     }
 
 }
